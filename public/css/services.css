@@ -1,0 +1,39 @@
+/* Services Section */
+.services {
+  margin-top: -60px;
+  padding: 0px 20px;
+  background-color: transparent;
+  height: 120px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #00a2e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.service-card p {
+  font-size: 1rem;
+}
