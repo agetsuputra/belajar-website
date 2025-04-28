@@ -1,0 +1,48 @@
+/* @media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+} */
+
+/* Smartphone */
+@media (max-width: 576px) {
+  .header {
+    position: fixed;
+    top: 0;
+  }
+  .logo {
+    margin-left: 2vw;
+  }
+  .logo-text {
+    font-size: 14px;
+  }
+  .menu {
+    margin-right: 2vw;
+    gap: 10px;
+    align-items: center;
+  }
+  .menutext {
+    font-size: 14px;
+  }
+  .ba-button {
+    width: 4vh;
+    height: 4vh;
+  }
+  .ba-button::after {
+    content: "BA"; /* ubah tulisan jadi 'BA' saat di layar kecil */
+  }
+  .menu {
+    width: auto;
+    gap: 12px;
+  }
+
+  .menu-item .text {
+    display: none; /* sembunyikan text di mobile */
+  }
+
+  .menu-item .icon {
+    display: block; /* tampilkan icon di mobile */
+    font-size: 24px;
+    color: #2f318b;
+  }
+}

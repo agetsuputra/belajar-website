@@ -70,7 +70,7 @@ body {
   display: flex;
   align-items: center;
   width: 40vh;
-  gap: 20px;
+  gap: 10px;
   margin-left: 10vw;
 }
 
@@ -92,26 +92,56 @@ body {
   margin-right: 10vw;
   width: 40vw;
   display: flex;
+  align-items: center;
   justify-content: end;
   gap: 20px;
 }
 
-.menutext {
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-item .text {
   font-size: 18px;
   font-weight: 600;
   color: #2f318b;
 }
+
+.menu-item .icon {
+  display: none;
+}
+
+.menu-item .icon svg {
+  width: 22px;
+  height: 22px;
+}
+
 .ba-button {
   background-color: #2f318b;
   padding-left: 12px;
   padding-right: 12px;
   font-size: 16px;
   font-weight: 500;
-  color: #f4f4f4;
+  color: transparent;
   text-decoration: none;
   border-radius: 6px;
   border: 0;
+  width: 200px;
   height: 4vh;
+  position: relative;
+}
+
+.ba-button::after {
+  content: "Book Appointment"; /* default tampil di desktop */
+  color: #f4f4f4; /* warna teks untuk pseudo-element */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* supaya teks tidak pecah */
 }
 
 .blur-background {
